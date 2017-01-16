@@ -2,6 +2,20 @@
 一个Android日期选择控件，支持无限滑动
 ##效果图：
 ![效果图](https://github.com/xingxing-yan/CalendarDateView/blob/master/git/CalendarDemo.gif)
+##添加依赖：
+在项目的build.gradle中添加：
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+ 在应用的build.gradle中添加：
+ ```
+ compile 'com.github.xingxing-yan:CalendarDateView:1.0.0'
+ ```
 ##使用方式：
 使用起来也非常方便， 只需要在布局文件中加入如下代码即可：
 ```
