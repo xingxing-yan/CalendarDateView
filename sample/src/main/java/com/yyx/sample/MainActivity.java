@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(int year, int month, int day) {
                 String date = year + "-" + (month+1) + "-" + day;
-                Toast.makeText(MainActivity.this, date, Toast.LENGTH_SHORT);
+                Toast.makeText(MainActivity.this, date, Toast.LENGTH_SHORT).show();
             }
         });
     }
