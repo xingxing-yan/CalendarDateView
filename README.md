@@ -23,9 +23,9 @@
         
 ```
         
-WeekDayView周一到周日的文字控件，支持设置周末颜色和工作日的颜色。
-CalendarDateView是日期选择控件，支持日期颜色设置和选中日期的颜色，选择日期的背景色等
-
+WeekDayView周一到周日的文字控件，支持设置周末颜色和工作日的颜色。<br/>
+CalendarDateView是日期选择控件，支持日期颜色设置和选中日期的颜色，选择日期的背景色等<br/>
+注意：WeekDayView和CalendarDateView的高度需要一个固定值，不能设置为wrap_content
 ```
 mCdv.setDateTextView(mTvDate);
 ```
