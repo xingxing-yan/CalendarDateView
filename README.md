@@ -2,6 +2,7 @@
 一个Android日期选择控件，支持无限滑动
 ##使用方式：
 使用起来也非常方便， 只需要在布局文件中加入如下代码即可：
+```
  <com.yyx.library.WeekDayView
        android:id="@+id/main_wdv"
        android:layout_width="match_parent"
@@ -18,18 +19,22 @@
         app:day_color="@color/black"
         app:select_day_color="@color/white"
         app:select_day_bg_color="@android:color/holo_green_light"
-        app:shape_type="circle"/>
-
+        app:shape_type="circle"/>
+        
+```
+        
 WeekDayView周一到周日的文字控件，支持设置周末颜色和工作日的颜色。
-
 CalendarDateView是日期选择控件，支持日期颜色设置和选中日期的颜色，选择日期的背景色等
 
+```
 mCdv.setDateTextView(mTvDate);
+```
 
 设置一个TextView展示当前选中的日期
 
 ##监听日期的点击事件
-···Java
+
+```
 mCdv.setOnItemClickListener(new CalendarDateView.OnItemClickListener() {
     @Override
     public void onItemClick(int year, int month, int day) {
@@ -37,9 +42,12 @@ mCdv.setOnItemClickListener(new CalendarDateView.OnItemClickListener() {
       Toast.makeText(MainActivity.this, date, Toast.LENGTH_SHORT);
     }
    });
-···
+   
+```
+
 ##自定义属性列表：
-···Java
+
+```
 <declare-styleable name="WeekDayView">
         <!--上横线颜色-->
         <attr name="top_line_color" format="color"/>
@@ -52,7 +60,6 @@ mCdv.setOnItemClickListener(new CalendarDateView.OnItemClickListener() {
        <!--是否画上下横向-->
         <attr name="is_draw_t_b_line" format="boolean"/>
     </declare-styleable>
-
     <declare-styleable name="MonthDateView">
         <!--当天的颜色-->
         <attr name="current_day_color" format="color"/>
@@ -70,4 +77,5 @@ mCdv.setOnItemClickListener(new CalendarDateView.OnItemClickListener() {
             <enum name="circle" value="1"/>
         </attr>
     </declare-styleable>
-···
+    
+```
