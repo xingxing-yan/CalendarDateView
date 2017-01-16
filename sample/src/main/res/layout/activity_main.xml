@@ -30,7 +30,5 @@
         app:day_color="@color/black"
         app:select_day_color="@color/white"
         app:select_day_bg_color="@android:color/holo_green_light"
-        app:shape_type="circle">
-
-    </com.yyx.library.CalendarDateView>
+        app:shape_type="circle"/>
 </LinearLayout>

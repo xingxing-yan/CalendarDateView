@@ -4,6 +4,7 @@ import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.yyx.library.CalendarDateView;
 import com.yyx.library.WeekDayView;
@@ -34,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setListener() {
-
+        mCdv.setOnItemClickListener(new CalendarDateView.OnItemClickListener() {
+            @Override
+            public void onItemClick(int year, int month, int day) {
+                String date = year + "-" + (month+1) + "-" + day;
+                Toast.makeText(MainActivity.this, date, Toast.LENGTH_SHORT);
+            }
+        });
     }
 }
