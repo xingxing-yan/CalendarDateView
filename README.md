@@ -38,12 +38,12 @@ mCdv.setDateTextView(mTvDate);
 
 ```
 mCdv.setOnItemClickListener(new CalendarDateView.OnItemClickListener() {
-    @Override
-    public void onItemClick(int year, int month, int day) {
-      String date = year + "-" + (month+1) + "-" + day;
-      Toast.makeText(MainActivity.this, date, Toast.LENGTH_SHORT);
-    }
-   });
+  @Override
+  public void onItemClick(int year, int month, int day) {
+    String date = year + "-" + (month+1) + "-" + day;
+    Toast.makeText(MainActivity.this, date, Toast.LENGTH_SHORT).show();
+  }
+});
    
 ```
 
