@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         mWdv = (WeekDayView) findViewById(R.id.main_wdv);
         mCdv = (CalendarDateView) findViewById(R.id.main_cdv);
         mTvDate = (TextView) findViewById(R.id.main_date);
+
+
     }
 
     private void otherLogic() {
