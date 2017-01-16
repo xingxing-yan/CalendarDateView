@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WeekDayView">
+        <!--上横线颜色-->
+        <attr name="top_line_color" format="color"/>
+        <!--下横线颜色-->
+        <attr name="bottom_line_color" format="color"/>
+        <!--工作日颜色-->
+        <attr name="work_day_color" format="color"/>
+        <!--周末颜色-->
+        <attr name="weekend_day_color" format="color"/>
+       <!--是否画上下横向-->
+        <attr name="is_draw_t_b_line" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="MonthDateView">
+        <!--当天的颜色-->
+        <attr name="current_day_color" format="color"/>
+        <!--其他日期的颜色-->
+        <attr name="day_color" format="color"/>
+        <!--被选中日期的颜色-->
+        <attr name="select_day_color" format="color"/>
+        <!--被选中日期的背景色-->
+        <attr name="select_day_bg_color" format="color"/>
+        <!--提示点的颜色-->
+        <attr name="tip_color" format="color"/>
+        <!--被选中日期的背景形状-->
+        <attr name="shape_type" format="enum">
+            <enum name="rect" value="0"/>
+            <enum name="circle" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>
