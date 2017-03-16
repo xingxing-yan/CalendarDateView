@@ -1,8 +1,8 @@
 # CalendarDateView
 一个Android日期选择控件，支持无限滑动
-##效果图：
+## 效果图：
 ![效果图](https://github.com/xingxing-yan/CalendarDateView/blob/master/git/CalendarDemo.gif)
-##添加依赖：
+## 添加依赖：
 在项目的build.gradle中添加：
 ```
 allprojects {
@@ -16,7 +16,7 @@ allprojects {
  ```
  compile 'com.github.xingxing-yan:CalendarDateView:1.0.0'
  ```
-##使用方式：
+## 使用方式：
 使用起来也非常方便， 只需要在布局文件中加入如下代码即可：
 ```
  <com.yyx.library.WeekDayView
@@ -48,7 +48,7 @@ mCdv.setDateTextView(mTvDate);
 
 设置一个TextView展示当前选中的日期
 
-##监听日期的点击事件
+## 监听日期的点击事件
 
 ```
 mCdv.setOnItemClickListener(new CalendarDateView.OnItemClickListener() {
@@ -61,7 +61,7 @@ mCdv.setOnItemClickListener(new CalendarDateView.OnItemClickListener() {
    
 ```
 
-##自定义属性列表：
+## 自定义属性列表：
 
 ```
 <declare-styleable name="WeekDayView">
